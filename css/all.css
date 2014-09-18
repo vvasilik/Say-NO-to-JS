@@ -1,0 +1,140 @@
+body{
+	margin:0;
+	color:#000;
+	font:12px/15px Arial, Helvetica, sans-serif;
+	background:#fff;
+	min-width:960px;
+}
+img{
+	border-style:none;
+	vertical-align:top;
+}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+a:active{background-color:transparent;}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+form,fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+.h-wrapper{
+	padding: 50px;
+}
+.b-wrapper__title{
+	margin: 0 0 10px;
+}
+/*accordion*/
+.b-accordion{
+	overflow: hidden;
+	margin: 0 0 50px;
+	padding: 20px;
+	background: #ccc;
+}
+.b-accordion__example{
+	float: left;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 20px;
+}
+.b-accordion__title{
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+.b-accordion__title__right{
+	float: right;
+}
+.b-accordion__label{
+	display: block;
+	padding: 10px;
+	border: 1px solid #000;
+}
+.b-accordion__label:hover{
+	cursor: pointer;
+	background: #bbb;
+}
+.b-accordion__radio{ display: none;}
+.b-accordion__box{
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	background: #fff;
+	padding: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.b-accordion__box p{ padding: 10px;}
+.b-accordion__radio:checked + .b-accordion__box{
+	max-height: 1000px;
+}
+/*--*/
+/*tab*/
+.b-tab{
+	position: relative;
+	overflow: hidden;
+	padding: 40px;
+	background: #ccc;
+}
+.b-tab__nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.b-tab__nav__frame{
+	float: left;
+	width: 100px;
+	border: 1px solid #000;
+	border-width: 1px 1px 1px 0;
+}
+.b-tab__nav__frame:first-child{ border-width: 1px;}
+.b-tab__nav__label{
+	display: block;
+	text-align: center;
+	background: #fff;
+	color: #000;
+	padding: 3px 0 3px 10px;
+}
+.b-tab__nav__label:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.b-tab__nav__holder{ border: 1px solid #000;}
+.b-tab__nav__radio{
+	display: none;
+}
+.b-tab__nav__box{
+	overflow: hidden;
+	max-height: 0;
+}
+.b-tab__nav__radio:checked + .b-tab__nav__box{
+	max-height: 1000px;
+}
+.b-tab__nav__box p{ padding: 10px;}
+.b-tab__active{
+	display: none;
+	position: absolute;
+	top: 40px;
+	width: 100px;
+	height: 21px;
+	border: 1px solid #f00;
+}
+.b-tab__nav__radio:checked + .b-tab__nav__box .b-tab__active{ display: block;}
+.b-tab__active._first{
+	left: 40px;
+}
+.b-tab__active._second{
+	left: 141px;
+}
+.b-tab__active._third{
+	left: 242px;
+}
+/*--*/
